@@ -1,4 +1,4 @@
-1) JS-regrx form validation 
+1) JS-regex Rogers Kasweii form validation 
 
 This is a simple registration form with client-side validation using JavaScript.
 
