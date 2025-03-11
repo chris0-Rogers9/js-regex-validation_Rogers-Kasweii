@@ -13,7 +13,9 @@ Shows a success message upon successful form submission.
 4) Technologies Used
 
 HTML
+
 CSS
+
 JavaScript
 
 5) File Structure
@@ -29,18 +31,25 @@ JavaScript
 6) Setup Instructions
 
   i) Clone the repository or download the files.
+  
   ii) Open index.html in a web browser.
+  
 7) Validation Rules
     
   Full Name: Required field, cannot be empty.
+  
   Email: Must be a valid email format.
+  
   Phone Number: Must contain only numbers and be of valid length.
+  
   Password: Required field, cannot be empty.
 
 8) How It Works
 
 The user fills in the form fields.
+
 If any input is invalid, an error message is displayed.
+
 Upon successful validation, a success message appears.
 
 9) License
