@@ -19,7 +19,12 @@
             fullName: value => /^[A-Za-z ]+$/.test(value) || "Only alphabetic characters and spaces allowed.",
             email: value => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value) || "Enter a valid email address.",
             phone: value => /^\d{10,15}$/.test(value) || "Enter a valid phone number (10-15 digits).",
-            password: value => /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/.test(value) || "Password must be at least 8 characters long, include one uppercase letter, one lowercase letter, and one number."
+            password: value => {
+                if (!/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/.test(value)) {
+                    return "Password must be at least 8 characters long, include one uppercase letter, one lowercase letter, and one number.";
+                }
+                return true;
+            }
         };
 
         function validateField(field) {
